@@ -32,4 +32,7 @@ else:
 tax_owed = calculate_tax(income, tax_rate)
 
 # Display results when button is pressed
-if st.button("Calculate T
+if st.button("Calculate Tax"):
+    st.write(f"Your income: ${income:.2f}")
+    st.write(f"Applicable tax rate: {tax_rate}%")
+    st.write(f"Total tax owed: ${tax_owed:.2f}")
